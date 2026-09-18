@@ -1,29 +1,28 @@
 
 // LW2
 
-// import 'dart:io';
-// void processOrder({
-//   required int orderId,
-//   required double itemPrice,
-//   String ?promoCode,
-//   double ?deliveryFee,
-// }) {
-//   double discount = 0;
-//   if(deliveryFee== null || deliveryFee< 500){
-//     deliveryFee = 500;
-//   }
-//
-//
-//   if ( promoCode == 'SAVE10') {
-//     itemPrice *= 0.9;
-//   }
-//   double Finaltotal  = itemPrice + deliveryFee;
-//   print('Finaltotal: $Finaltotal');
-// }
-// void main(){
-//   processOrder(orderId: 2, itemPrice: 3000, promoCode: 'SAVE10', deliveryFee: 400);
-//   processOrder(orderId: 1, itemPrice: 1500);
-// }
+void processOrder({
+  required int orderId,
+  required double itemPrice,
+  String ?promoCode,
+  double ?deliveryFee,
+}) {
+  double discount = 0;
+  if(deliveryFee== null || deliveryFee< 500){
+    deliveryFee = 500;
+  }
+
+
+  if ( promoCode == 'SAVE10') {
+    itemPrice *= 0.9;
+  }
+  double Finaltotal  = itemPrice + deliveryFee;
+  print('Finaltotal: $Finaltotal');
+}
+void main(){
+  processOrder(orderId: 2, itemPrice: 3000, promoCode: 'SAVE10', deliveryFee: 400);
+  processOrder(orderId: 1, itemPrice: 1500);
+}
 
 
 
