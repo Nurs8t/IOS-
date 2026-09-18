@@ -31,61 +31,61 @@
 //Home work
 // task1
 
-// void checkBalance({
-//   required String name,
-//   required double balance}) => print("current available balance: $balance");
-//
-// void main(){
-//   checkBalance(name: "NURS", balance: 670000);
-//   checkBalance(name:"Zhan", balance: 1234456);
-// }
+void checkBalance({
+  required String name,
+  required double balance}) => print("current available balance: $balance");
 
-// // task2
-// void deposit({
-//   required double currentBalance,
-//   double ?amount,
-// }) {
-//
-//   double depositAmount= amount ?? 0.0;
-//
-//   double updateBalance= depositAmount + currentBalance;
-//   print('updateBalance:  $updateBalance');
-//
-//
-// }
-// void main(){
-//   deposit(currentBalance: 140,amount: 60 );
-//   deposit(currentBalance: 130 );
-// }
+void main(){
+  checkBalance(name: "NURS", balance: 670000);
+  checkBalance(name:"Zhan", balance: 1234456);
+}
+
+// task2
+void deposit({
+  required double currentBalance,
+  double ?amount,
+}) {
+
+  double depositAmount= amount ?? 0.0;
+
+  double updateBalance= depositAmount + currentBalance;
+  print('updateBalance:  $updateBalance');
+
+
+}
+void main(){
+  deposit(currentBalance: 140,amount: 60 );
+  deposit(currentBalance: 130 );
+}
 
 // // task3
-// void withdraw({
-//   required String name,
-//   required double currentbalance,
-//   double ?amount,
-//   int ?PinCode,
-// })
-// {
-//   if( PinCode !=1234 || PinCode==null){
-//     print("Errror");
-//     return;
-//
-//   }
-//   if( amount == null || amount >currentbalance){
-//     print("Errror");
-//     return;
-//
-//   }
-//   currentbalance -= amount;
-//   print('$name balance $currentbalance');
-//
-//
-// }
-//
-// void main(){
-//   withdraw(name:"NER", currentbalance: 1200, amount: 200, PinCode:1234);
-//   withdraw(name:"NR", currentbalance: 1200, amount: 2000, PinCode:1234);
-//   withdraw(name:"NERR", currentbalance: 1200, amount: 200, PinCode:12345);
-// }
-//
-//
+void withdraw({
+  required String name,
+  required double currentbalance,
+  double ?amount,
+  int ?PinCode,
+})
+{
+  if( PinCode !=1234 || PinCode==null){
+    print("Errror");
+    return;
+
+  }
+  if( amount == null || amount >currentbalance){
+    print("Errror");
+    return;
+
+  }
+  currentbalance -= amount;
+  print('$name balance $currentbalance');
+
+
+}
+
+void main(){
+  withdraw(name:"NER", currentbalance: 1200, amount: 200, PinCode:1234);
+  withdraw(name:"NR", currentbalance: 1200, amount: 2000, PinCode:1234);
+  withdraw(name:"NERR", currentbalance: 1200, amount: 200, PinCode:12345);
+}
+
+
