@@ -124,9 +124,6 @@ void main() {
       }
     }
   }
-
-  print("\nTASK 5:");
-
   if (isPrime) {
     print("$number -> prime number");
   } else {
